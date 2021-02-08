@@ -8,7 +8,7 @@ syn region talonString1 start=/'/ skip=/\\'/ end=/'/
 
 " Functions
 syn match talonFunction "\v[a-z]+" contained
-syn match talonFunctionCall "\v.*\(" contains=talonFunction
+syn match talonFunctionCall "\v[a-z]*\(" contains=talonFunction
 
 " Comments
 syn region talonComment start="#" end="$"
